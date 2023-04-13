@@ -1,6 +1,6 @@
 # My first Python Pong Game
 # By Ravier Gardon
-# based from @TokyoEdTech @freeCodeCamp.org
+# from @TokyoEdTech @freeCodeCamp.org tutorial
 
 import turtle
 import winsound
