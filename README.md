@@ -1,2 +1,2 @@
-# Python-Pong-Game-1
+# It's the Pong!
  Ping Pong game made using Python Turtle graphics.
