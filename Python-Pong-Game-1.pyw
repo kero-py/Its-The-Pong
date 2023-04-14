@@ -1,6 +1,6 @@
 # My first Python Pong Game
 # By Ravier Gardon
-# based from @TokyoEdTech @freeCodeCamp.org
+# from @TokyoEdTech @freeCodeCamp.org tutorial
 
 import turtle
 import winsound
@@ -14,7 +14,7 @@ gameON=False
 wn = turtle.Screen()
 wn.title("It's the Pong! by R")
 wn.bgcolor("black")
-wn.setup(width=1000, height=600)
+wn.setup(width=1.0, height=1.0)
 wn.tracer(0)
 
 # Score
@@ -115,6 +115,13 @@ def quit():
     global exitGame
     exitGame=True
 
+# restart
+def restart():
+    global exitGame
+    global gameON
+    if exitGame==True:
+        gameON=True
+
 # Keyboard binding
 
 #paddle a controls
@@ -129,6 +136,9 @@ wn.onkeypress(paddle_b_down, "Down")
 
 # quit game
 keyboard.add_hotkey("q", lambda: quit())
+
+# restart game
+keyboard.add_hotkey("r", lambda: restart())
 
 # Main game loop
 
