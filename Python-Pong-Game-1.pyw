@@ -115,13 +115,6 @@ def quit():
     global exitGame
     exitGame=True
 
-# restart
-def restart():
-    global exitGame
-    global gameON
-    if exitGame==True:
-        gameON=True
-
 # Keyboard binding
 
 #paddle a controls
@@ -136,9 +129,6 @@ wn.onkeypress(paddle_b_down, "Down")
 
 # quit game
 keyboard.add_hotkey("q", lambda: quit())
-
-# restart game
-keyboard.add_hotkey("r", lambda: restart())
 
 # Main game loop
 
